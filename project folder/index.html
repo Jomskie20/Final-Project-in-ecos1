@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deforestation - Environmental Awareness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Navigation Bar */
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            color: #0099cc;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .menu li {
+            margin-left: 10px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        
+        .menu li a:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .menu li a.active {
+            background-color: #0099cc;
+            color: white;
+        }
+        
+        /* Hero Sections */
+        .hero {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: bold;
+            z-index: 1;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+        }
+        
+        /* Section Content */
+        .section-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        /* Infographics Section */
+        .infographics-hero {
+            background-image: url('./img33.jpg');
+        }
+        
+        .infographics-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            width: 32%;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .info-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        
+        .info-card h3 {
+            padding: 15px;
+            text-align: center;
+            color: #0099cc;
+        }
+
+
+        .info-card {
+            height: auto; /* allow height to expand */
+            padding: 10px;
+            text-align: center;
+        }
+
+        .info-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+            margin-bottom: 10px; /* adds spacing below image */
+        }
+
+        .info-card p {
+            margin-top: 5px;
+            color: #333; /* or any visible color */
+            font-size: 16px;
+        }
+
+        
+        /* Project Proposal Section */
+        .project-hero {
+            background-image: url('./img33.jpg');
+        }
+        
+        /* LetteSSr Section */
+        .letter-hero {
+            background-image: url('./img33.jpg');
+        }
+        
+        .letter-content {
+            font-style: italic;
+            line-height: 1.6;
+        }
+        
+        .letter-signature {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        /* Developer Section */
+        .developer-hero {
+            background-image: url('./dev.jpg');
+        }
+        
+        .developer-profile {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .developer-image {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        
+        .developer-info {
+            flex: 1;
+        }
+        
+        .developer-info p {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="./logo.jpg" alt="">
+                <span class="logo-text">Re-Grow</span>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#infographics">Infographics</a></li>
+                <li><a href="#letter">Letter</a></li>
+                <li><a href="#project">Project Proposal</a></li>
+                <li><a href="#developer">Developers</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Infographics Section -->
+    <section id="infographics">
+        <div class="hero infographics-hero">
+            <h1>Infographics</h1>
+        </div>
+        <div class="container">
+            <div class="section-content">
+                <p>Our Infographics section uses simple visuals to explain the problem of deforestation. Cutting down too many trees harms animals, people, and the planet. It leads to climate change, loss of habitats, and poor air quality. Learn how you can help by making eco-friendly choices, planting trees, and supporting forest protection.</p>
+                <p>Check the infographics below to see how we can all take part in saving our forests.</p>
+                
+                <div class="infographics-cards">
+                    <div class="info-card">
+                        <img src="./img4.jpg" alt="Deforestation Concern">
+                        <h3>Deforestation Concern</h3>
+                        <p>Ashley Taroy</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img2.jpg" alt="Cause of Deforestation">
+                        <h3>CAUSE OF DEFORESTATION</h3>
+                        <p>Christine Jane Taclas</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="./img5.jpg" alt="Water Conser">
+                        <h3>CAUSE OF DEFORESTATION</h3>
+                        <p>Jomar Bueno</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Proposal Section -->
+    <section id="project">
+        <div class="hero project-hero">
+            <h1>Project Proposal</h1>
+        </div>
+        <div class="container">
+            <div class="section-content">
+                <p>Our project focuses on the urgent problem of deforestation, which harms local livelihoods, farms, and the environment. We aim to raise awareness and take action through tree planting, forest protection, and community involvement.
+                    By restoring forest areas and promoting sustainable land use, we hope to support biodiversity and ensure a greener future for rural communities.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Letter Section -->
+    <section id="letter">
+        <div class="hero letter-hero">
+            <h1>Letter to Our Mother Earth</h1>
+        </div>
+        <div class="container">
+            <div class="section-content">
+                <p>In our "Writing a Letter" section, we take time to reflect and express our love for the planet. This letter is about caring for our environment and protecting it for future generations.</p>
+                <br>
+                <div class="letter-content">
+                    <p>Dear Mother Earth,</p>
+                    <br>
+                    <p>Thank you for the clean air we breathe, the water we drink, and the beauty of nature all around us. We often forget how lucky we are to live on such a wonderful planet.</p>
+                    <br>
+                    <p>We know that pollution and waste are hurting you. That’s why we are doing our part by keeping our communities clean, planting more greenery, and spreading awareness about taking care of the environment.</p>
+                    <br>
+                    <p>We may be small, but our efforts can make a big difference. We promise to protect your land, skies, and seas.</p>
+                    <br>
+                    <div class="letter-signature">
+                        <p>With love and care,</p>
+                        <p>from Re-Grow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Developer Section -->
+    <section id="developer">
+        <div class="hero developer-hero">
+            <h1>Developers</h1>
+        </div>
+        <div class="container">
+            <div class="section-content">
+                <p>Re-Grow is developed by Computer Science Students from North Eastern Mindanao State University - Tagbina Campus.</p>
+                
+                <div class="developer-profile">
+                    <div class="developer-image">
+                        <!-- Developer Image Placeholder -->
+                         <img src="./ashley.jpg" alt="Ashley Taroy" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                    </div>
+                    <div class="developer-info">
+                        <p><span class="info-label">Full Name:</span><span class="info-value">Ashely Taroy</span></p>
+                        <p><span class="info-label">Course:</span><span class="info-value">BS in Computer Science</span></p>
+                        <p><span class="info-label">School:</span><span class="info-value">NEMSU - Tagbina Campus</span></p>
+                        <p><span class="info-label">Contact Information:</span></p>
+                        <p><span class="info-label">Facebook:</span><span class="info-value">Ashley Taroy</span></p>
+                        <p><span class="info-label">Email:</span><span class="info-value">ashleytaroy5@gmail.com</span></p>
+                        <p><span class="info-label">Mobile:</span><span class="info-value">+63 912 345 6789</span></p>
+                    </div>
+                </div>
+
+                 <!-- Developer 2 -->
+                <div class="developer-profile">
+                    <div class="developer-image">
+                        <img src="./Jomar.jpg" alt="Developer 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                    </div>
+                    <div class="developer-info">
+                        <p><span class="info-label">Full Name:</span><span class="info-value">Jomar Bueno</span></p>
+                        <p><span class="info-label">Course:</span><span class="info-value">BS in Computer Science</span></p>
+                        <p><span class="info-label">School:</span><span class="info-value">NEMSU - Tagbina Campus</span></p>
+                        <p><span class="info-label">Contact Information:</span></p>
+                        <p><span class="info-label">Facebook:</span><span class="info-value">Jomar Bueno</span></p>
+                        <p><span class="info-label">Email:</span><span class="info-value">buenojomar134@email.com</span></p>
+                        <p><span class="info-label">Mobile:</span><span class="info-value">+63 912 820 2114</span></p>
+                    </div>
+                </div>
+
+                <!-- Developer 3 -->
+                <div class="developer-profile">
+                    <div class="developer-image">
+                        <img src="./Christine1.jpg" alt="Developer 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;">
+                    </div>
+                    <div class="developer-info">
+                        <p><span class="info-label">Full Name:</span><span class="info-value">Christine Jane Taclas</span></p>
+                        <p><span class="info-label">Course:</span><span class="info-value">BS in Computer Science</span></p>
+                        <p><span class="info-label">School:</span><span class="info-value">NEMSU - Tagima Campus</span></p>
+                        <p><span class="info-label">Contact Information:</span></p>
+                        <p><span class="info-label">Facebook:</span><span class="info-value">Christine Jane Taclas</span></p>
+                        <p><span class="info-label">Email:</span><span class="info-value">christienjane47@email.com</span></p>
+                        <p><span class="info-label">Mobile:</span><span class="info-value">+63 997 468 9453</span></p>
+                    </div>
+                </div>
+        </div>
+    </section>
+</script>
+</script>
+</body>
+</html>
